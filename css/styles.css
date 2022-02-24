@@ -182,11 +182,39 @@ article:last-child {
     background: #cccccc;
     position: absolute;
     bottom: 44px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-box-shadow: rgb(150,150,150) 5px 5px;
+    -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+    box-shadow: rgb(150,150,150) 5px 5px;
+}
+
+form ul{
+    list-style: none;
+}
+
+form ul li{
+    margin-bottom:10px;
+}
+
+form legend{
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+form label{
+    font-size: 12px;
+    display:block;
+}
+
+table{
+    text-shadow: #369 2px 2px 2px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:10px
 }
 
 footer#pie {
-    position: absolute;
-    bottom: 0;
     background: #fffbb9;
     font-size: 11px;
     width: 100%;
@@ -195,8 +223,10 @@ footer#pie {
     height: 44px;
 }
 
+
+
 /* DESKTOP 1024*/
-@media (mIN-width: 1024px) {
+@media (min-width: 1024px) {
     #cuerpo {
         margin: 15px auto;
         width: 960px;
@@ -236,9 +266,9 @@ footer#pie {
         margin: 20px 0 0;
         padding: 20px;
         height: 74vh;
-        /*-moz-transform: rotate(10deg);
-        -webkit-transform: rotate(10deg);*/
     }
+    
+
 
     #pie {
         clear: both;

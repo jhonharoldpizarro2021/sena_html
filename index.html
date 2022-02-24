@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhon Harold Pizarro</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -33,9 +34,9 @@
     <!-- MENU DESKTOP -->
     <nav id="menuDesktop">
         <ul>
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
+            <li id="menu1">Menu 1</li>
+            <li id="menu2">Menu 2</li>
+            <li id="menu3">Menu 3</li>
         </ul>
     </nav>    
     <div id="cuerpo">
@@ -59,7 +60,30 @@
         </section>
         <!-- SIDEBAR -->
         <aside id="lateral">
-            Elemento barra lateral<br /> uno<br />dos<br />tres<br />
+            <form name="formulario">
+                <legend> Formulario Web </legend>
+                <ul>
+                    <li>
+                        <label for="txtNombre"> Nombre:</label>
+                        <input type="text" name="txtNombre" required>
+                    </li>
+                    <li>
+                        <label for="txtNombre"> Correo:</label>   
+                        <input type="email" name="miEmail" placeholder="Ingrese email"/>                     
+                    </li>
+                    <li>
+                        <label for="txtNombre"> Estrato:</label>
+                        <input type="number" name="numEdad" min="1" max="6" step="1"/>
+                    </li>
+                    <li>
+                        <label for="txtNombre"> Fecha:</label>
+                        <input type="text" name="txtNombre" equired>
+                    </li>
+                    <li>
+                        <input type="submit" name="btnEnviar" value="Enviar"/>
+                    </li>
+                </ul>
+            </form>
         </aside>
 
     </div>

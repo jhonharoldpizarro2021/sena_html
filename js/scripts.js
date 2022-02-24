@@ -1,8 +1,8 @@
 window.addEventListener('load', asignarEventos, false);
 function asignarEventos() {
-    document.getElemensById('menu1').addEventListener('click', clic1, false);
-    document.getElemensById('menu2').addEventListener('click', clic2, false);
-    document.getElemensById('menu3').addEventListener('click', clic3, false);
+    document.getElementById('menu1').addEventListener('click', click1, false);
+    document.getElementById('menu2').addEventListener('click', click2, false);
+    document.getElementById('menu3').addEventListener('click', click3, false);
 }
 function click1() {
     window.alert('Hizo click en el menu 1');
