@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-/* RESETS */
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: verdana;
-    box-sizing: border-box;
-}
-
 /* MOBILE FIRST = */
 
 h1 {
@@ -67,6 +59,10 @@ nav a:hover {
 nav ul {
     padding: 0;
     list-style-type: none;
+}
+
+nav ul li {
+    cursor:pointer;
 }
 
 #menuToggle {
@@ -149,6 +145,7 @@ nav ul {
 #menu li {
     padding: 10px 0;
     transition-delay: 2s;
+    cursor:pointer;
 }
 
 #menuToggle input:checked~ul {
@@ -156,12 +153,11 @@ nav ul {
 }
 
 #seccion {
-    margin: 20px;
+    /*margin: 20px;*/
 }
 
 article {
     background: #FFFBCC;
-    border: 1px solid #999999;
     padding: 20px;
     margin-bottom: 15px;
     -moz-border-radius: 20px;
@@ -177,21 +173,22 @@ article:last-child {
 }
 
 #lateral {
-    width: 100%;
-    padding: 20px;
+    /*width: 100%;*/
+    /*padding: 20px;*/
     background: #cccccc;
-    position: absolute;
-    bottom: 44px;
+    /*position: absolute;*/
+    /*bottom: 44px;*/
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    -moz-box-shadow: rgb(150,150,150) 5px 5px;
-    -webkit-box-shadow: rgb(150,150,150) 5px 5px;
-    box-shadow: rgb(150,150,150) 5px 5px;
+    -moz-box-shadow: rgb(150, 150, 150) 2px 2px 8px;
+    -webkit-box-shadow: rgb(150, 150, 150) 2px 2px 8px;
+    box-shadow: rgb(150, 150, 150) 2px 2px 8px;
 }
 
 form ul{
     list-style: none;
+    padding:0;
 }
 
 form ul li{
@@ -229,7 +226,8 @@ footer#pie {
 @media (min-width: 1024px) {
     #cuerpo {
         margin: 15px auto;
-        width: 960px;
+        /*width: 960px;*/
+        height: 64vh;
     }
 
     #menuMobile {
@@ -254,16 +252,16 @@ footer#pie {
     }
 
     #seccion {
-        float: left;
-        width: 660px;
-        margin: 20px;
+        /*float: left;*/
+        /*width: 660px;*/
+        /*margin: 20px;*/
     }
 
     #lateral {
         position: inherit;
-        float: right;
-        width: 220px;
-        margin: 20px 0 ;
+        /*float: right;*/
+        /*width: 220px;*/
+        /*margin: 20px 0 ;*/
         padding: 20px;
        
     }
@@ -277,27 +275,11 @@ footer#pie {
         border-top: 1px solid #999999;
     }
 
-    article {
-        background: #FFFBCC;
-        border: 1px solid #999999;
-        padding: 20px;
-        margin-bottom: 15px;
-        -moz-border-radius: 20px;
-        -webkit-border-radius: 20px;
-        border-radius: 20px;
-        -moz-box-shadow: rgb(150, 150, 150) 2px 2px 8px;
-        -webkit-box-shadow: rgb(150, 150, 150) 2px 2px 8px;
-        box-shadow: rgb(150, 150, 150) 2px 2px 8px;
-    }
+
 
     article footer {
         text-align: right;
     }
 
-    #menu li {
-        display: inline-block;
-        list-style: none;
-        padding: 5px;
-        font: bold 14px verdana, sans-serif;
-    }
+    
 }

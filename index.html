@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhon Harold Pizarro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
@@ -33,64 +34,59 @@
     </header>
     <!-- MENU DESKTOP -->
     <nav id="menuDesktop">
-        <ul>
+        <ul class="container">
             <li id="menu1">Menu 1</li>
             <li id="menu2">Menu 2</li>
             <li id="menu3">Menu 3</li>
         </ul>
-    </nav>    
-    <div id="cuerpo">
-
-        <!-- SECTION -->
-        <section id="seccion">
-            <article>
-                <h2>Titulo del primer artículo</h2>
-                <p>Este es el contenido principal del <mark>artículo 1</mark></p>
-                <footer>
-                    <small> fin artículo 1</small>
-                </footer>
-            </article>
-            <article>
-                <h2>Titulo del segudo artículo</h2>
-                <p>Este es el contenido principal del <mark>artículo 2</mark></p>
-                <footer>
-                    <small> fin artículo 2</small>
-                </footer>
-            </article>
-        </section>
-        <!-- SIDEBAR -->
-        <aside id="lateral">
-            <form name="formulario">
-                <legend> Formulario Web </legend>
-                <ul>
-                    <li>
-                        <label for="txtNombre"> Nombre:</label>
-                        <input type="text" name="txtNombre" required>
-                    </li>
-                    <li>
-                        <label for="miEmail"> Correo:</label>   
-                        <input type="email" name="miEmail" placeholder="Ingrese email"/>                     
-                    </li>
-                    <li>
-                        <label for="numEdad"> Estrato:</label>
-                        <input type="number" name="numEdad" min="1" max="6" step="1"/>
-                    </li>
-                    <li>
-                        <label for="txtFecha"> Fecha:</label>
-                        <input type="date" name="txtFecha" equired>
-                    </li>
-                    <li>
-                        <input type="submit" name="btnEnviar" value="Enviar"/>
-                    </li>
-                </ul>
-            </form>
-        </aside>
-
+    </nav>  
+  
+    <div id="cuerpo" class="container mt-5">
+        <div class="row">
+            <!-- SECTION -->
+            <section id="seccion" class="col-md-8">
+                <article>
+                    <h2>Titulo del primer artículo</h2>
+                    <p>Este es el contenido principal del <mark>artículo 1</mark></p>
+                    <footer>
+                        <small> fin artículo 1</small>
+                    </footer>
+                </article>
+                <article class="mt-5">
+                    <h2>Titulo del segudo artículo</h2>
+                    <p>Este es el contenido principal del <mark>artículo 2</mark></p>
+                    <footer>
+                        <small> fin artículo 2</small>
+                    </footer>
+                </article>
+            </section>
+            <!-- SIDEBAR -->
+            <aside class="col-md-4">
+                <form id="lateral">
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </aside>
+        </div>
     </div>
     <!-- FOOTER -->
     <footer id="pie">
         <p>Información de la empresa, elemento footer</p>
-        <script src="js/scripts.js"></script>
     </footer>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

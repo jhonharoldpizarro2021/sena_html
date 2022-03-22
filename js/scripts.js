@@ -89,7 +89,7 @@ if(pro>=7){
     }
 } */
 
-let parrafo = document.createElement('p');
+/* let parrafo = document.createElement('p');
 let contenido = document.createTextNode('Hola Mundo!');
 parrafo.appendChild(contenido);
-document.body.appendChild(parrafo);
+document.body.appendChild(parrafo); */
