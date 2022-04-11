@@ -89,7 +89,33 @@ if(pro>=7){
     }
 } */
 
-/* let parrafo = document.createElement('p');
+let parrafo = document.createElement('p');
 let contenido = document.createTextNode('Hola Mundo!');
 parrafo.appendChild(contenido);
-document.body.appendChild(parrafo); */
+document.body.appendChild(parrafo);
+
+
+
+/**
+ *  validar form
+ */
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var alertTrigger = document.getElementById('liveAlertBtn')
+ 
+function alerta(message, type, name, email) {
+    var wrapper = document.createElement('div');
+    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">Hola '+name+'.' +message+ '. Tu correo es: '+email+'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+   alertPlaceholder.append(wrapper);
+}
+ 
+if (alertTrigger) {
+    alertTrigger.addEventListener('click', function () {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let agree = document.getElementById("check").value;
+        if(name!=='' && email!=='' && agree.checked){
+            alerta('Nice, you triggered this alert message!', 'success', name, email)
+        }  else{
+        }       
+    })
+}
